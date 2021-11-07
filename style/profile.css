@@ -1,0 +1,126 @@
+.profile{
+    padding: 4rem 0;
+    position: relative;
+}
+.profile h2{
+    margin-bottom: 4rem;
+    text-align: center;
+    position: relative;
+    font-weight: 900;
+}
+.profile h2::before{
+    content: "";
+    position: absolute;
+    background-color: #3bc45f;
+    width: 200px;
+    height: 4px;
+    top: 4rem;
+    margin: 0 0 0 2rem;
+}
+.profile h2::after{
+    content: "";
+    position: absolute;
+    background-color: #ffb84d;
+    width: 80px;
+    height: 8px;
+    top: 3.9rem;
+    margin-left: -9.5rem;
+}
+.edit-icon{
+    background: #3bc45f;
+    width: 90px;
+    height: 30px;
+    border-radius: 25px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: absolute;
+    padding: 10 20px;
+    right: 4rem;
+}
+.edit-icon i{
+    font-size: 18px;
+}
+.edit-icon span{
+    font-weight: 900;
+    margin-left: 8px;
+}
+.profile-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-img{
+    border: 4px solid #ffb84d;
+    border-radius: 50%;
+    width: 308px;
+}
+.profile-img img{
+    width: 300px;
+}
+.change-img{
+    margin-top: 4rem;
+}
+.change-img input[type="file"]{
+    display: none;
+}
+.change-img label{
+    background: #3bc45f;
+    border-radius: 25px;
+    padding: 8px 20px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+}
+.change-img label i{
+    margin-right: 8px;
+}
+.profile-lift{
+    padding: 4rem 2rem;
+    border-left: 4px solid #e6e6e6;
+}
+.profile-lift label{
+    display: flex;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 10px 0 10px 10px;
+}
+.profile-lift input{
+    width: 100%;
+    border: 2px solid #3bc45f;
+    padding: 10px;
+    border-radius: 25px;
+}
+.save-btn{
+    background: #ff0000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin: 4rem 0;
+    width: 200px;
+    height: 40px;
+}
+/* Media queries */
+@media (max-width: 575.98px) {
+    .profile-right{
+        margin-top: 4rem;
+    }
+    .profile h2::before{
+        margin: 0;
+    }
+    .profile h2::after{
+        margin-left: -9rem;
+    }
+}
+@media (max-width: 767.98px) {
+    .profile-lift{
+        border: none;
+    }
+    .profile h2::after{
+        margin-left: -8rem;
+    }
+}

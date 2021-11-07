@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/products.css">
+    <title>Products-page</title>
+</head>
+<body>
+    <!-- Navbar --> 
+    <nav class="navbar">
+        <div class="container-xl container-fluid">
+            <div class="nav_toggle d-md-none d-sm-block" id="nav-toggle">
+                <i class="fas fa-th"></i>
+            </div>
+            <div class="nav-links" id="nav-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Offer</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="#">M<span>&</span>O</a>
+            </div>
+            <div class="icons">
+                <div class="cart-item">
+                    <a href="./pages/cart.html" class="cart-icon">
+                        <i class="fab fa-opencart"></i>
+                        <span>0</span>
+                    </a>
+                    <div class="dropdown-cart">
+                        <ul>
+                            <li>
+                                <div class="product-cart">
+                                    <img src="../img/user.png" alt="">
+                                    <div class="product-cart-info">
+                                        <h4>Lorem Ipusem</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <button><i class="fas fa-trash"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-cart">
+                                    <img src="../img/user.png" alt="">
+                                    <div class="product-cart-info">
+                                        <h4>Lorem Ipusem</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <button><i class="fas fa-trash"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-cart">
+                                    <img src="../img/user.png" alt="">
+                                    <div class="product-cart-info">
+                                        <h4>Lorem Ipusem</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <button><i class="fas fa-trash"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-cart">
+                                    <img src="../img/user.png" alt="">
+                                    <div class="product-cart-info">
+                                        <h4>Lorem Ipusem</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <button><i class="fas fa-trash"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-cart">
+                                    <img src="../img/user.png" alt="">
+                                    <div class="product-cart-info">
+                                        <h4>Lorem Ipusem</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <button><i class="fas fa-trash"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-cart">
+                                    <img src="../img/user.png" alt="">
+                                    <div class="product-cart-info">
+                                        <h4>Lorem Ipusem</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <button><i class="fas fa-trash"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-cart">
+                                    <img src="../img/user.png" alt="">
+                                    <div class="product-cart-info">
+                                        <h4>Lorem Ipusem</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <button><i class="fas fa-trash"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-item">
+                    <div class="user-img">
+                        <img src="../img/user.png" alt="">
+                    </div>
+                    <div class="dropdown-user">
+                        <ul>
+                            <li><a href="./pages/Profile.html"><img src="../img/user.png" alt=""> Your Profile</a></li>
+                            <li><a href="#"><i class="fas fa-truck"></i> You Orders</a></li>
+                            <hr>
+                            <li><a href="#"><i class="fas fa-info-circle"></i> Help</a></li>
+                            <li><a href="#"><i class="fas fa-cogs"></i> Settings</a></li>
+                            <hr>
+                            <!-- <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li> -->
+                            <li><a href="#"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Products section -->
+    <section class="products-section">
+        <div class="container-xl container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-12">
+                    <div class="filter-container">
+                        <h5 class="text-center">Filters</h5>
+                        <div class="filter-items">
+                            <div class="filter-item">
+                                <h6>Section</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">Men</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">Women</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">Children</label>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <h6>Type</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">New</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">Old</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">Fashion</label>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <h6>Price</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">50$ - 100$</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">100$ - 200$</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">200$ - 300$</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">300$ - 400$</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">400$ - 500$</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">Over 500$</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-12">
+                    <div class="products-container">
+                        <div class="row">
+                            <h3 class="text-center"><i class="fas fa-exclamation-circle"></i> Sorry, There are no products suitable for this choice</h3>
+                        </div>
+                        <div class="row">   
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="../img/Products/T-shirt/pngegg (12).png" alt="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="price">150<span>$</span></div>
+                                        <ul>
+                                            <li><button data-tip="Add to Favorites"><i class="fas fa-heart"></i></button></li>
+                                            <li><button data-tip="View"><i class="fas fa-eye"></i></button></li>
+                                            <li><button data-tip="Add to cart"><i class="fas fa-cart-plus"></i></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="../img/Products/T-shirt/pngegg (12).png" alt="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="price">150<span>$</span></div>
+                                        <ul>
+                                            <li><button data-tip="Add to Favorites"><i class="fas fa-heart"></i></button></li>
+                                            <li><button data-tip="View"><i class="fas fa-eye"></i></button></li>
+                                            <li><button data-tip="Add to cart"><i class="fas fa-cart-plus"></i></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="../img/Products/T-shirt/pngegg (12).png" alt="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="price">150<span>$</span></div>
+                                        <ul>
+                                            <li><button data-tip="Add to Favorites"><i class="fas fa-heart"></i></button></li>
+                                            <li><button data-tip="View"><i class="fas fa-eye"></i></button></li>
+                                            <li><button data-tip="Add to cart"><i class="fas fa-cart-plus"></i></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="../img/Products/T-shirt/pngegg (12).png" alt="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="price">150<span>$</span></div>
+                                        <ul>
+                                            <li><button data-tip="Add to Favorites"><i class="fas fa-heart"></i></button></li>
+                                            <li><button data-tip="View"><i class="fas fa-eye"></i></button></li>
+                                            <li><button data-tip="Add to cart"><i class="fas fa-cart-plus"></i></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="../img/Products/T-shirt/pngegg (12).png" alt="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="price">150<span>$</span></div>
+                                        <ul>
+                                            <li><button data-tip="Add to Favorites"><i class="fas fa-heart"></i></button></li>
+                                            <li><button data-tip="View"><i class="fas fa-eye"></i></button></li>
+                                            <li><button data-tip="Add to cart"><i class="fas fa-cart-plus"></i></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="../img/Products/T-shirt/pngegg (12).png" alt="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="price">150<span>$</span></div>
+                                        <ul>
+                                            <li><button data-tip="Add to Favorites"><i class="fas fa-heart"></i></button></li>
+                                            <li><button data-tip="View"><i class="fas fa-eye"></i></button></li>
+                                            <li><button data-tip="Add to cart"><i class="fas fa-cart-plus"></i></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="../img/Products/T-shirt/pngegg (12).png" alt="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="price">150<span>$</span></div>
+                                        <ul>
+                                            <li><button data-tip="Add to Favorites"><i class="fas fa-heart"></i></button></li>
+                                            <li><button data-tip="View"><i class="fas fa-eye"></i></button></li>
+                                            <li><button data-tip="Add to cart"><i class="fas fa-cart-plus"></i></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="../img/Products/T-shirt/pngegg (12).png" alt="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="price">150<span>$</span></div>
+                                        <ul>
+                                            <li><button data-tip="Add to Favorites"><i class="fas fa-heart"></i></button></li>
+                                            <li><button data-tip="View"><i class="fas fa-eye"></i></button></li>
+                                            <li><button data-tip="Add to cart"><i class="fas fa-cart-plus"></i></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="../img/Products/T-shirt/pngegg (12).png" alt="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="price">150<span>$</span></div>
+                                        <ul>
+                                            <li><button data-tip="Add to Favorites"><i class="fas fa-heart"></i></button></li>
+                                            <li><button data-tip="View"><i class="fas fa-eye"></i></button></li>
+                                            <li><button data-tip="Add to cart"><i class="fas fa-cart-plus"></i></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="../img/Products/T-shirt/pngegg (12).png" alt="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="price">150<span>$</span></div>
+                                        <ul>
+                                            <li><button data-tip="Add to Favorites"><i class="fas fa-heart"></i></button></li>
+                                            <li><button data-tip="View"><i class="fas fa-eye"></i></button></li>
+                                            <li><button data-tip="Add to cart"><i class="fas fa-cart-plus"></i></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="../img/Products/T-shirt/pngegg (12).png" alt="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="price">150<span>$</span></div>
+                                        <ul>
+                                            <li><button data-tip="Add to Favorites"><i class="fas fa-heart"></i></button></li>
+                                            <li><button data-tip="View"><i class="fas fa-eye"></i></button></li>
+                                            <li><button data-tip="Add to cart"><i class="fas fa-cart-plus"></i></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="../img/Products/T-shirt/pngegg (12).png" alt="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="price">150<span>$</span></div>
+                                        <ul>
+                                            <li><button data-tip="Add to Favorites"><i class="fas fa-heart"></i></button></li>
+                                            <li><button data-tip="View"><i class="fas fa-eye"></i></button></li>
+                                            <li><button data-tip="Add to cart"><i class="fas fa-cart-plus"></i></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item"><a class="page-link d-none d-sm-block" href="#">4</a></li>
+                                  <li class="page-item"><a class="page-link d-none d-sm-block" href="#">5</a></li>
+                                  <li class="page-item"><a class="page-link d-none d-sm-block" href="#">6</a></li>
+                                  <li class="page-item"><a class="page-link d-none d-sm-block" href="#">7</a></li>
+                                  <li class="page-item"><a class="page-link d-none d-sm-block" href="#">8</a></li>
+                                  <li class="page-item"><a class="page-link d-none d-sm-block" href="#">9</a></li>
+                                  <li class="page-item"><a class="page-link d-none d-sm-block" href="#">10</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">11</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <section class="footer">
+        <footer class="footer-container">
+            <div class="container-xl container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h3 class="footer-logo">
+                            <a href="#">M<span>&</span>O</a>
+                        </h3>
+                        <p class="footer-description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod expedita perferendis pariatur corrupti tenetur consectetur. Rerum enim voluptas illum impedit inventore possimus aspernatur, ex nisi delectus. Fugiat eligendi excepturi libero!
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-12">
+                        <h4 class="footer-title">Products</h4>
+                        <ul class="footer-links">
+                            <li><a href="">Men</a></li>
+                            <li><a href="">Women</a></li>
+                            <li><a href="">Children</a></li>
+                            <li><a href="">New</a></li>
+                            <li><a href="">Offer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-12">
+                        <h4 class="footer-title">Products</h4>
+                        <ul class="footer-links">
+                            <li><a href="">Men</a></li>
+                            <li><a href="">Women</a></li>
+                            <li><a href="">Children</a></li>
+                            <li><a href="">New</a></li>
+                            <li><a href="">Offer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-12">
+                        <h4 class="footer-title">Products</h4>
+                        <ul class="footer-links">
+                            <li><a href="">Men</a></li>
+                            <li><a href="">Women</a></li>
+                            <li><a href="">Children</a></li>
+                            <li><a href="">New</a></li>
+                            <li><a href="">Offer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-12">
+                        <h4 class="footer-title">Products</h4>
+                        <ul class="footer-links">
+                            <li><a href="">Men</a></li>
+                            <li><a href="">Women</a></li>
+                            <li><a href="">Children</a></li>
+                            <li><a href="">New</a></li>
+                            <li><a href="">Offer</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <hr class="footer-hr">
+                    <div class="copyrights text-center">
+                        <p>All rights reserved to &copy; M.Hassan</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

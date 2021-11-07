@@ -1,0 +1,232 @@
+.cart{
+    padding: 4rem 0;
+}
+.cart-title{
+    margin: 20px 0;
+}
+.cart-title h2{
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+.cart-title h2 i{
+    color: #ffb84d;
+    margin-right: 10px;
+}
+.cart-title p{
+    font-size: 18px;
+    font-weight: 700;
+}
+.cart-title p i{
+    color: #ff0000;
+}
+.cart-title p a{
+    color: #ffb84d;
+}
+.cart-title p a i{
+    color: #3bc45f;
+}
+.cart-container, .total-container{
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.cart-img{
+    margin: 8px 20px;
+}
+.cart-img img{
+    border-radius: 50%;
+    height: 200px;
+    box-shadow: inset 0 7px 7px rgba(0,0,0,0.2);
+    border: 2px solid #ffb84d;
+}
+.cart-info{
+    margin: 1rem;
+}
+.cart-info h4, .total-container h4{
+    font-weight: 600;
+}
+.cart-description{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 2rem;
+    margin-bottom: 10px;
+    color: #b5b5b5;
+}
+.select-section{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    margin-bottom: 10px;
+}
+.qantity , .size{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qantity h5 , .size h5 ,.colors-section h5{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 3px 10px 0 0;
+}
+.qantity select , .size select{
+    background: #ffb84d;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0 5px;
+    outline: none;
+}
+.colors-section{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.colors{
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+.color{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: 5px solid;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.color[color="blue"]{
+    background-color: #2175f5;
+    border-color: #2175f5;
+}
+.color[color="red"]{
+    background-color: #f84848;
+    border-color: #f84848;
+}
+.color[color="green"]{
+    background-color: #29b864;
+    border-color: #29b864;
+}
+.color[color="orange"]{
+    background-color: #ff5521;
+    border-color: #ff5521;
+}
+.color[color="black"]{
+    background-color: #444;
+    border-color: #444;
+}
+.color:hover , .color.active{
+    border-color: #fff;
+    box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+.cart-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    display: flex;
+}
+.price p{
+    font-weight: 600;
+    font-size: 18px;
+}
+.price span{
+    font-size: 12px;
+}
+.btn-remove{
+    border: none;
+    background: #ff0000;
+    border-radius: 25px;
+    color: #fff;
+    padding: 4px 20px;
+}
+.total-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.total-price{
+    display: flex;
+    align-items: center;
+}
+.total-container h4{
+    color: #ffb84d;
+}
+.total-container p{
+    font-weight: 600;
+    font-size: 18px;
+    margin: -4px 0 0 10px;
+}
+.pay-methods{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+.pay-methods h5{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.paypal-btn{
+    background: #fdc33b;
+    border: none;
+    border-radius: 25px;
+    padding: 4px 60px;
+}
+.paypal-btn img{
+    height: 30px;
+}
+.credit-btn{
+    background:  #0099ff;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 4px 60px;
+    border: none;
+}
+.pay-methods span{
+    color: #bfbfbf;
+    margin: 14px 0;
+    position: relative;
+}
+.pay-methods span::after, .pay-methods span::before{
+    position: absolute;
+    content: "";
+    background: #bfbfbf;
+    width: 100px;
+    height: 1px;
+    top: 11px;
+}
+.pay-methods span::after{
+    right: 2rem;
+}
+.pay-methods span::before{
+    left: 2rem;
+}
+@media (max-width: 575.98px) {
+    .cart-img{
+        margin: 0;
+    }
+    .select-section{
+        flex-direction: column;
+        justify-content: first baseline;
+    }
+    .qantity, .size{
+        justify-content: left;
+        margin: 1rem 0;
+    }
+}
+@media (max-width: 555.98px) {
+    .cart-container{
+        flex-direction: column;
+    }
+}
